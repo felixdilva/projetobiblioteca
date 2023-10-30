@@ -1,11 +1,36 @@
 package ifrn.pi.biblioteca.models;
 
-public class Aluno {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
+@Entity
+public class Aluno {
+    
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id; 
 	private String Nome;
 	private String Cpf;
 	private String Endereço;
 	private String Matricula;
+
+	
+	
+	/**
+	 * @return the id
+	 */
+	public Long getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getNome() {
 		return Nome;
