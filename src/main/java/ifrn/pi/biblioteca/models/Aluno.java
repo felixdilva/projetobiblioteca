@@ -11,63 +11,59 @@ public class Aluno {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id; 
-	private String Nome;
-	private String Cpf;
-	private String Endereço;
-	private String Matricula;
+	private String nome;
+	private String cpf;
+	private String endereco;
+	private String matricula;
 
 	
 	
-	/**
-	 * @return the id
-	 */
+	
 	public Long getId() {
 		return id;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
+	
 	public void setId(Long id) {
 		this.id = id;
 	}
 
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		Nome = nome;
+		nome = nome;
 	}
 
 	public String getCpf() {
-		return Cpf;
+		return cpf;
 	}
 
 	public void setCpf(String cpf) {
-		Cpf = cpf;
+		cpf = cpf;
 	}
 
-	public String getEndereço() {
-		return Endereço;
+	public String getEndereco() {
+		return endereco;
 	}
 
-	public void setEndereço(String endereço) {
-		Endereço = endereço;
+	public void setEndereco(String endereco) {
+		endereco = endereco;
 	}
 
 	public String getMatricula() {
-		return Matricula;
+		return matricula;
 	}
 
 	public void setMatricula(String matricula) {
-		Matricula = matricula;
+		matricula = matricula;
 	}
 
 	@Override
 	public String toString() {
-		return "Aluno [id=" + id + ", Nome=" + Nome + ", Cpf=" + Cpf + ", Endereço=" + Endereço + ", Matricula="
-				+ Matricula + "]";
+		return "Aluno [id=" + id + ", nome=" + nome + ", cpf=" + cpf + ", endereco=" + endereco + ", matricula="
+				+ matricula + "]";
 	}
 
 }

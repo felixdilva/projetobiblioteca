@@ -4,32 +4,33 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import ifrn.pi.biblioteca.models.Aluno;
-import ifrn.pi.biblioteca.repositories.AlunoRepository;
-
+import ifrn.pi.biblioteca.models.livro;
+import ifrn.pi.biblioteca.repositories.livroRepository;
 
 
 @Controller
-public class AlunoController {
+public class livroController {
 	
 	@Autowired
-	private AlunoRepository er;
+	private livroRepository li;
 	
-	@RequestMapping("/aluno/form")
+	@RequestMapping("/livro/form")
 	public String form() {
-		return "biblioteca/formAluno";
+		return "biblioteca/formlivro";
 	}
  
-	@PostMapping("/aluno")
-	public String adicionar(Aluno aluno) {
+	@PostMapping("/livro")
+	public String adicionar(livro livro) {
 		
-		System.out.println(aluno);
-	    er.save(aluno);
-		
+		System.out.println(livro);
+	   li.save(livro);
 		
 		return "biblioteca/aluno-cadastrado";
 	  
   
   }
 }
+	
+	
+
+

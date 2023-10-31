@@ -7,8 +7,9 @@
 <title>Biblioteca</title>
 </head>
 <body>
-	
-	 <nav th:fragment ="menu">
+
+
+ <nav th:fragment ="menu">
     <div class="nav-wrapper container" >
       <a href="#" class="brand-logo">Projeto Biblioteca</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -17,10 +18,34 @@
        </ul>
     </div>
   </nav>
-  
+
 	<div class="container"></div>
-	<h1>Bem Vindo a nossa aplicação!</h1>
-  <h2>Graças a Deus deu certo!</h2>
+	
+
+
+<h1> Adiconar Aluno </h1>
+
+ <form action="/aluno" method="post">
+
+<div>
+ <label>Nome:</label> <input type="text" name="nome">
 </div>
+<div>
+ <label>Cpf:</label> <input type="text" name="cpf">
+</div>
+<div>
+ <label>Endereço:</label> <input type="text" name="endereco">
+</div>
+<div>
+ <label>Matricula:</label> <input type="text" name="matricula">
+</div>
+<div>
+<button type="submit">Salvar</button>
+<button type="reset">Limpar</button>
+</div>
+
+</form>
+</div>
+
 </body>
 </html>
