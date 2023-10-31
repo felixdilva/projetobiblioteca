@@ -64,4 +64,10 @@ public class Aluno {
 		Matricula = matricula;
 	}
 
+	@Override
+	public String toString() {
+		return "Aluno [id=" + id + ", Nome=" + Nome + ", Cpf=" + Cpf + ", Endereço=" + Endereço + ", Matricula="
+				+ Matricula + "]";
+	}
+
 }
